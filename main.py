@@ -6,10 +6,17 @@ import apple
 import snake
 import AI
 
+def resource_path(relative_path):
+	try:
+	  base_path = sys._MEIPASS
+	except Exception:
+	  base_path = os.path.abspath(".")
+	return os.path.join(base_path, relative_path)
+
 TILE = 20
-WIDTH = 20
-HEIGHT = 20
-FPS = 30
+WIDTH = 35
+HEIGHT = 35
+FPS = 300
 
 block_field = np.zeros((WIDTH, HEIGHT))
 food_field	= np.zeros((WIDTH, HEIGHT))

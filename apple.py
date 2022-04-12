@@ -7,7 +7,7 @@ class Apple:
 		self.height = len(block_field[0])
 		self.block_field = block_field
 		self.food_field = food_field
-		self.objects = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+		self.objects = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
 		self.spawn()
 
 	def get_field(self):
